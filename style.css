@@ -1,0 +1,302 @@
+.center {
+    text-align: center;
+}
+
+.removeMargin {
+    margin: 0;
+}
+
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background-color: burlywood;
+}
+
+body .section1 {
+    background-color: burlywood;
+
+    padding: 1.8em;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    margin-bottom: 15px;
+
+}
+
+body .title {
+
+    background: -webkit-linear-gradient(top, #bfcaff 6%, #00187d 30%, #00187d 70%, #bfcaff 97%);
+    -webkit-background-clip: text;
+    -webkit-animation: wort_2 14s infinite;
+    -webkit-animation-timing-function: ease_out;
+
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    animation: wort_2 14s infinite;
+    animation-timing-function: ease_out;
+}
+
+@keyframes wort_2 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 180px;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@-webkit-keyframes wort_2 {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 180px;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+body .row-centered {
+    text-align: center;
+}
+
+body .col-centered {
+    display: inline-block;
+    float: none;
+    text-align: left;
+
+    margin-right: -4px;
+}
+
+body #error {
+    color: red;
+}
+
+body .form-control {
+    border-radius: 0;
+    border: 1px solid #0f5aa5;
+    border-right: 0;
+    border-left-color: red !important;
+    height: 38px;
+}
+
+body input[type="text"],
+body .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #0f5aa5;
+    border-right: 0;
+    background-color: #fcfcfc;
+}
+
+body textarea {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #0f5aa5;
+    border-right: 0;
+    background-color: #fcfcfc;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    resize: none !important;
+}
+
+body .form-control:disabled,
+body .form-control[readonly] {
+    background-color: #fcfcfc;
+    opacity: 1;
+}
+
+body #contentid::before {
+    content: 'Type';
+    margin-right: 0.6em;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+body #dateid::before {
+    content: 'Due date';
+    margin-right: 0.6em;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+body #timeid::before {
+    content: 'Submission Time';
+    margin-right: 1.5em;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+body #timeid::after {
+    content: '(Optional)';
+    margin-right: 1.5em;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+body .margin {
+    border: 1px solid #0f5aa5;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fcfcfc;
+}
+
+body .removeTopBorder {
+    border-top: 0 !important;
+}
+
+body .form-control::-webkit-input-placeholder {
+    opacity: 0.7;
+}
+
+body .form-control:-ms-input-placeholder {
+    opacity: 0.7;
+}
+
+body .form-control::-ms-input-placeholder {
+    opacity: 0.7;
+}
+
+body .form-control::placeholder {
+    opacity: 0.7;
+}
+
+body #addbutton:hover {
+    background-color: green;
+    opacity: 0.8;
+}
+
+body #resetbutton:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+
+body #clearbutton:hover {
+    background-color: rgba(255, 0, 0, 0.61);
+    opacity: 0.8;
+}
+
+body .container-fluid {
+    -ms-flex-line-pack: auto;
+    align-content: auto;
+    margin: auto;
+}
+
+.notestyle {
+    position: relative;
+    height: 12em;
+    width: 15em;
+    background-color: #ffff99;
+    border: 0px solid #532f00;
+    border-top: 0;
+    border-bottom: 0;
+    display: inline-block;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    padding-left: 0.3em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    -webkit-animation: fadeIn 1.7s ease-in-out;
+    animation: fadeIn 1.7s ease-in-out;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+@keyframes slideRight {
+    0% {
+        -webkit-filter: opacity(0);
+        -webkit-transform: translateX(-150%);
+        transform: translateX(-150%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-filter: opacity(1);
+    }
+}
+
+@-webkit-keyframes slideRight {
+    0% {
+        -webkit-transform: translateX(-150%);
+        -webkit-filter: opacity(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        -webkit-filter: opacity(1);
+    }
+}
+
+
+
+.notestyle:hover .deleteproperties {
+    opacity: 1;
+    display: block;
+    -webkit-animation: fadeIn 1.5s;
+    animation: fadeIn 1.5s;
+}
+
+.taskproperties {
+    position: absolute;
+    display: inline-block;
+    top: 3em;
+    left: 1em;
+    right: 1em;
+    word-wrap: break-word;
+    overflow: auto;
+    height: 6em;
+    width: 11em;
+    font-family: "Reenie Beanie", arial, sans-serif;
+    font-size: 120%;
+}
+
+.dateproperties {
+    position: absolute;
+    display: inline-block;
+    left: 1em;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.timeproperties {
+    position: absolute;
+    display: inline-block;
+    left: 8.5em;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.deleteproperties {
+    position: absolute;
+    display: inline-block;
+    left: 13.5em;
+    font-weight: bold;
+    opacity: 0;
+}
